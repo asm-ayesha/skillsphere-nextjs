@@ -1,4 +1,5 @@
 import Image from "next/image";
+// import { FadeLoader } from "react-spinners";
 
 
 const PopylarCourses = async () => {
@@ -11,11 +12,14 @@ const PopylarCourses = async () => {
         .slice(0, 3);
 
     return (
-        <div className='mt-15 container mx-auto'>
+        <div className='mt-15 container mx-auto px-2'>
             <div>
                 <h2 className='font-bold text-2xl text-sky-900'>Populer Courses</h2>
 
-                <div className="grid md:grid-cols-3 gap-6 px-2">
+               
+
+                <div className="grid md:grid-cols-3 gap-6 ">
+                    
                     {topCourses.map((course) => (
                         <div key={course.id} className="card border border-sky-100  shadow-md mt-8">
                             <figure>

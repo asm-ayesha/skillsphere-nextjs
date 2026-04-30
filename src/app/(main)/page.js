@@ -1,5 +1,7 @@
-import Banner from "@/components/Banner";
-import PopylarCourses from "@/components/PopylarCourses";
+import Banner from "@/components/homepage/Banner";
+import LearningTips from "@/components/homepage/LearningTips";
+import PopylarCourses from "@/components/homepage/PopylarCourses";
+import TopInstructors from "@/components/homepage/TopInstructors";
 import Image from "next/image";
 
 export default function Home() {
@@ -7,6 +9,8 @@ export default function Home() {
       <div>
         <Banner></Banner>
         <PopylarCourses></PopylarCourses>
+        <LearningTips></LearningTips>
+        <TopInstructors></TopInstructors>
       </div>
   );
 }
