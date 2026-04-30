@@ -9,10 +9,10 @@ const NotFoundPage = () => {
       <div className="text-center max-w-md">
 
         {/* 404 Number */}
-        <h1 className="text-8xl font-extrabold text-teal-900">404</h1>
+        <h1 className="text-8xl font-extrabold text-sky-900">404</h1>
 
         {/* Message */}
-        <h2 className="mt-4 text-2xl font-semibold text-teal-500">
+        <h2 className="mt-4 text-2xl font-semibold text-sky-500">
           Oops! This lesson is not available 📚
         </h2>
 
@@ -22,7 +22,7 @@ const NotFoundPage = () => {
 
         {/* Illustration style circle */}
         <div className="mt-6 flex justify-center">
-          <div className="w-24 h-24 rounded-full bg-indigo-100 flex items-center justify-center text-3xl">
+          <div className="w-24 h-24 rounded-full bg-sky-100 flex items-center justify-center text-3xl">
             🎓
           </div>
         </div>
@@ -31,7 +31,7 @@ const NotFoundPage = () => {
         <div className="mt-6 flex gap-3 justify-center">
           <Link
             href="/"
-            className="px-5 py-3 bg-teal-600 text-white rounded-xl hover:bg-teal-700 transition"
+            className="px-5 py-3 bg-sky-600 text-white rounded-xl hover:bg-sky-700 transition"
           >
             Back to Home
           </Link>

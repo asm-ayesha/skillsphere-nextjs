@@ -86,5 +86,93 @@
     "description": "Create stunning logos, icons, and brand identities from scratch using Adobe Illustrator's powerful vector tools.",
     "image": "https://images.unsplash.com/photo-1572044162444-ad60f128bdea?w=400&h=225&fit=crop",
     "category": "Design"
+  },
+  {
+    "id": 9,
+    "title": "iOS App Development with Swift",
+    "instructor": "Ryan Park",
+    "duration": "26 hours",
+    "rating": 4.7,
+    "level": "Intermediate",
+    "description": "Build real-world iOS applications using Swift and Xcode, covering UIKit, SwiftUI, and App Store deployment.",
+    "image": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=225&fit=crop",
+    "category": "Development"
+  },
+  {
+    "id": 10,
+    "title": "Machine Learning with TensorFlow",
+    "instructor": "Dr. Aisha Rahman",
+    "duration": "35 hours",
+    "rating": 4.9,
+    "level": "Advanced",
+    "description": "Master deep learning, neural networks, computer vision, and NLP using TensorFlow and Keras.",
+    "image": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=400&h=225&fit=crop",
+    "category": "Data Science"
+  },
+  {
+    "id": 11,
+    "title": "DevOps & CI/CD with Docker & Kubernetes",
+    "instructor": "Carlos Mendes",
+    "duration": "22 hours",
+    "rating": 4.8,
+    "level": "Advanced",
+    "description": "Learn containerization, orchestration, and automated deployment pipelines using Docker, Kubernetes, and GitHub Actions.",
+    "image": "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=400&h=225&fit=crop",
+    "category": "Cloud"
+  },
+  {
+    "id": 12,
+    "title": "Microsoft Excel — From Beginner to Expert",
+    "instructor": "Patricia Lee",
+    "duration": "14 hours",
+    "rating": 4.6,
+    "level": "Beginner",
+    "description": "Master Excel formulas, pivot tables, macros, and data visualization to boost your productivity.",
+    "image": "https://images.unsplash.com/photo-1543286386-713bdd548da4?w=400&h=225&fit=crop",
+    "category": "Productivity"
+  },
+  {
+    "id": 13,
+    "title": "Content Writing & Copywriting Mastery",
+    "instructor": "Sophie Turner",
+    "duration": "9 hours",
+    "rating": 4.5,
+    "level": "Beginner",
+    "description": "Learn how to write compelling blog posts, ad copies, email sequences, and landing pages that convert.",
+    "image": "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=400&h=225&fit=crop",
+    "category": "Marketing"
+  },
+  {
+    "id": 14,
+    "title": "Blockchain & Web3 Development",
+    "instructor": "David Kim",
+    "duration": "30 hours",
+    "rating": 4.6,
+    "level": "Advanced",
+    "description": "Build decentralized applications (dApps) using Solidity, Ethereum, Hardhat, and the Web3.js library.",
+    "image": "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=400&h=225&fit=crop",
+    "category": "Development"
+  },
+  {
+    "id": 15,
+    "title": "Photography for Beginners",
+    "instructor": "Maria Santos",
+    "duration": "8 hours",
+    "rating": 4.4,
+    "level": "Beginner",
+    "description": "Learn the fundamentals of photography including composition, lighting, exposure, and post-processing with Lightroom.",
+    "image": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=400&h=225&fit=crop",
+    "category": "Design"
+  },
+  {
+    "id": 16,
+    "title": "Project Management with Agile & Scrum",
+    "instructor": "Tom Williams",
+    "duration": "16 hours",
+    "rating": 4.7,
+    "level": "Intermediate",
+    "description": "Master Agile methodologies, Scrum framework, sprint planning, and team leadership for software projects.",
+    "image": "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=400&h=225&fit=crop",
+    "category": "Productivity"
   }
 ]

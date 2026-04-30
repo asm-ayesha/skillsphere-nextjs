@@ -18,6 +18,7 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
+      data-theme="light"
       className={`${OutfitFont.className}  h-full antialiased`}
     >
       <body>
