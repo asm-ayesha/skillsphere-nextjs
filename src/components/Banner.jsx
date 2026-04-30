@@ -25,7 +25,7 @@ const slides = [
 
 const Banner = () => {
   return (
-    <div className="relative h-[60vh] w-full overflow-hidden rounded-lg container mx-auto">
+    <div className="relative h-[60vh] w-full overflow-hidden rounded-lg container mx-auto px-2">
       <Image
         src={BannerImg}
         alt="hero"
