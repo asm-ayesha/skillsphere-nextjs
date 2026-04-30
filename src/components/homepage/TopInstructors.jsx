@@ -1,3 +1,7 @@
+"use client"
+
+import Image from "next/image";
+
 const TopInstructors = () => {
 
 
@@ -35,19 +39,21 @@ const TopInstructors = () => {
   return (
     <div className="container mx-auto px-6 py-16">
       {/* Section Title */}
-      <h2 className="text-4xl font-bold text-center text-sky-900 mb-10">
+      <h2 className="text-2xl font-bold text-sky-900 mb-10">
         Top Instructors
       </h2>
 
       {/* Instructor Cards */}
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
         {instructors.map((instructor) => (
-          <div key={instructor.id} className="card bg-white shadow-lg rounded-lg p-6">
+          <div key={instructor.id} className="card bg-white border border-sky-200 shadow-md rounded-lg p-6">
             <figure className="flex justify-center mb-4">
-              <img
+              <Image
                 src={instructor.image}
                 alt={instructor.name}
-                className="w-32 h-32 rounded-full object-cover"
+                width={100}
+                height={100}
+                className="rounded-full  object-cover"
               />
             </figure>
             <div className="card-body text-center">

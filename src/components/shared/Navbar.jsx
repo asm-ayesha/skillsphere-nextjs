@@ -22,7 +22,7 @@ const Navbar = () => {
           {/* Desktop Menu */}
           <ul className="hidden md:flex items-center gap-5 text-sm text-sky-600">
             <li><NavLink href="/">Home</NavLink></li>
-            <li><NavLink href="/all-photos">Courses</NavLink></li>
+            <li><NavLink href="/all-courses">Courses</NavLink></li>
             <li><NavLink href="/pricing">My Profile</NavLink></li>
           </ul>
 
@@ -47,7 +47,7 @@ const Navbar = () => {
           <div className="md:hidden mt-4 flex flex-col gap-3 text-sky-600">
 
             <NavLink href="/" onClick={() => setOpen(false)}>Home</NavLink>
-            <NavLink href="/all-photos" onClick={() => setOpen(false)}>Courses</NavLink>
+            <NavLink href="/all-courses" onClick={() => setOpen(false)}>Courses</NavLink>
             <NavLink href="/pricing" onClick={() => setOpen(false)}>My Profile</NavLink>
 
             <hr className="my-2" />

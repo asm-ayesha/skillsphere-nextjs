@@ -10,7 +10,7 @@ const LearningTips = () => {
       <div className="grid md:grid-cols-2 gap-10">
 
         {/* Study Techniques Card */}
-        <div className="card bg-white shadow-lg rounded-lg p-6">
+        <div className="card bg-white shadow-lg rounded-lg p-6 border border-sky-200 ">
           <div className="flex items-center mb-4">
             <span className="text-4xl text-sky-600 mr-4">📚</span>
             <h3 className="text-xl font-semibold text-sky-800">Study Techniques</h3>
@@ -26,7 +26,7 @@ const LearningTips = () => {
         </div>
 
         {/* Time Management Tips Card */}
-        <div className="card bg-white shadow-lg rounded-lg p-6">
+        <div className="card bg-white shadow-lg rounded-lg p-6 border border-sky-200">
           <div className="flex items-center mb-4">
             <span className="text-4xl text-sky-600 mr-4">⏰</span>
             <h3 className="text-xl font-semibold text-sky-800">Time Management Tips</h3>
