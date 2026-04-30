@@ -16,11 +16,12 @@ const CourseDtailsPage = async ({ params }) => {
         <div className="container mx-auto px-2">
             <h1 className="text-2xl text-sky-900 font-bold ">Course Details</h1>
 
-            <div className="border border-sky-200 p-6 shadow-md mt-7 rounded-xl grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2  items-center gap-4">
+            <div className="border border-sky-200 p-6 shadow-md mt-7 rounded-xl grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-8 items-center md:gap-4 ">
                 <div className="">
                     <Image
                         src={course.image}
-                        width={500}
+                        alt={course.title}
+                        width={700}
                         height={500}
                         className="rounded-xl"
                     >
@@ -31,7 +32,7 @@ const CourseDtailsPage = async ({ params }) => {
                         <h2 className="text-2xl text-sky-700">{course.title}</h2>
                         <p className="text-gray-600">{course.description}</p>
 
-                        <div className="flex justify-between">
+                        <div className="flex justify-between gap-2">
                             <p className="text-sky-900">Category: {course.category}</p>
                             <div className="flex items-center gap-1">
                                      <FaSignal color="#4682A9"></FaSignal>     
@@ -60,3 +61,6 @@ const CourseDtailsPage = async ({ params }) => {
 };
 
 export default CourseDtailsPage;
+
+
+
