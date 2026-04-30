@@ -1,0 +1,47 @@
+<svg width="100%" viewBox="0 0 680 680" role="img" xmlns="http://www.w3.org/2000/svg" style="">
+  <title style="fill:rgb(0, 0, 0);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">SkillSphere favicon — stylized S with orbit ring</title>
+  <desc style="fill:rgb(0, 0, 0);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">A modern EdTech logo: a bold geometric S letterform integrated with an elliptical orbit ring, rendered in indigo on a white rounded-square background.</desc>
+
+  <defs>
+    <!-- Clipping mask for the orbit ring (hides the part behind the S curve) -->
+    <clipPath id="orbit-clip">
+      <rect x="0" y="0" width="680" height="680"/>
+    </clipPath>
+    <!-- Mask to punch a gap in the orbit ring where the S passes through -->
+    <mask id="orbit-mask">
+      <rect x="0" y="0" width="680" height="680" fill="white"/>
+      <!-- Gap top-right (where S arm crosses) -->
+      <ellipse cx="400" cy="260" rx="52" ry="22" fill="black"/>
+      <!-- Gap bottom-left (where S arm crosses) -->
+      <ellipse cx="280" cy="420" rx="52" ry="22" fill="black"/>
+    </mask>
+  </defs>
+
+  <!-- Background: white rounded square -->
+  <rect x="40" y="40" width="600" height="600" rx="100" fill="white" stroke="#E5E7EB" stroke-width="2" style="fill:rgb(255, 255, 255);stroke:rgb(229, 231, 235);color:rgb(255, 255, 255);stroke-width:2px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- ── ORBIT RING ── -->
+  <!-- A tilted ellipse representing the global/orbital sphere motif -->
+  <ellipse cx="340" cy="340" rx="190" ry="75" transform="rotate(-28 340 340)" fill="none" stroke="#4F46E5" stroke-width="18" stroke-linecap="round" mask="url(#orbit-mask)" opacity="0.9" style="fill:none;stroke:rgb(79, 70, 229);color:rgb(255, 255, 255);stroke-width:18px;stroke-linecap:round;stroke-linejoin:miter;opacity:0.9;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- Orbit end caps (dot nodes) for a "connected nodes" feel -->
+  <circle cx="192" cy="272" r="11" fill="#4F46E5" opacity="0.85" style="fill:rgb(79, 70, 229);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.85;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <circle cx="488" cy="408" r="11" fill="#4F46E5" opacity="0.85" style="fill:rgb(79, 70, 229);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.85;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- ── LETTER S ── -->
+  <!--
+    Constructed from two arcs:
+    Upper bowl: opens right, anchored top-center to mid-center
+    Lower bowl: opens left, anchored mid-center to bottom-center
+    Junction: a clean diagonal link through the center
+  -->
+  <path d="&#10;      M 390 195&#10;      C 430 195, 470 218, 470 258&#10;      C 470 298, 435 318, 395 328&#10;      L 340 342&#10;      C 295 355, 255 375, 255 420&#10;      C 255 462, 295 490, 335 490&#10;      C 375 490, 415 470, 430 448&#10;    " fill="none" stroke="#4F46E5" stroke-width="54" stroke-linecap="round" stroke-linejoin="round" style="fill:none;stroke:rgb(79, 70, 229);color:rgb(255, 255, 255);stroke-width:54px;stroke-linecap:round;stroke-linejoin:round;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- Inner cover stroke — white — to create a sleek outlined S feel -->
+  <path d="&#10;      M 390 195&#10;      C 430 195, 470 218, 470 258&#10;      C 470 298, 435 318, 395 328&#10;      L 340 342&#10;      C 295 355, 255 375, 255 420&#10;      C 255 462, 295 490, 335 490&#10;      C 375 490, 415 470, 430 448&#10;    " fill="none" stroke="white" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" style="fill:none;stroke:rgb(255, 255, 255);color:rgb(255, 255, 255);stroke-width:18px;stroke-linecap:round;stroke-linejoin:round;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- Small accent dot at the open end of the S top-left arm -->
+  <circle cx="340" cy="195" r="0" fill="none" style="fill:none;stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <!-- Terminal cap dot at S start -->
+  <circle cx="340" cy="195" r="0" fill="#4F46E5" style="fill:rgb(79, 70, 229);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+</svg>
