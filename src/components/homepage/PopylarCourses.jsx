@@ -6,7 +6,7 @@ import CoursesCard from "./CoursesCard";
 const PopularCourses = async () => {
     const res = await fetch('https://skillsphere-nextjs.vercel.app/data.json')
     const courses = await res.json()
-    console.log(courses)
+    
 
     const topCourses = courses
         .sort((a, b) => b.rating - a.rating)

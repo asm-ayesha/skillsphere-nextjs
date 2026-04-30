@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 const CoursesCard = ({course}) => {
@@ -24,9 +25,11 @@ const CoursesCard = ({course}) => {
                                     <p className="font-bold text-gray-400 ">Ratings: <span className="text-sky-500">{course.rating}</span>
 
                                     </p>
+                                    <Link href={`/all-courses/${course.id}`} >
                                     <button className="px-5 py-3 bg-sky-600 text-white rounded-xl hover:bg-sky-700 transition cursor-pointer">
                                         View Details
                                     </button>
+                                    </Link>
                                 </div>
                             </div>
                         

@@ -5,7 +5,7 @@ import React from 'react';
 const AllCoursesPage = async () => {
     const res = await fetch('https://skillsphere-nextjs.vercel.app/data.json')
     const courses = await res.json()
-    console.log(courses)
+    
     return (
         <div>
             <h1 className='text-2xl font-bold m-4 text-sky-900' >All Courses</h1>
