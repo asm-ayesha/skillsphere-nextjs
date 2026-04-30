@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "title": "Complete Web Development Bootcamp",
+    "instructor": "John Doe",
+    "duration": "20 hours",
+    "rating": 4.8,
+    "level": "Beginner",
+    "description": "Learn full-stack web development from scratch with HTML, CSS, JavaScript, React, and Node.js.",
+    "image": "https://images.unsplash.com/photo-1627398242454-45a1465c2479?w=400&h=225&fit=crop",
+    "category": "Development"
+  },
+  {
+    "id": 2,
+    "title": "UI/UX Design Masterclass",
+    "instructor": "Sarah Ahmed",
+    "duration": "15 hours",
+    "rating": 4.7,
+    "level": "Intermediate",
+    "description": "Master the art of user interface and experience design using Figma, wireframing, and prototyping.",
+    "image": "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=225&fit=crop",
+    "category": "Design"
+  },
+  {
+    "id": 3,
+    "title": "Python for Data Science & Machine Learning",
+    "instructor": "Dr. Emily Chen",
+    "duration": "32 hours",
+    "rating": 4.9,
+    "level": "Intermediate",
+    "description": "Dive deep into data analysis, visualization, and machine learning using Python, Pandas, and Scikit-learn.",
+    "image": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=400&h=225&fit=crop",
+    "category": "Data Science"
+  },
+  {
+    "id": 4,
+    "title": "Digital Marketing & SEO Strategy",
+    "instructor": "Mark Johnson",
+    "duration": "12 hours",
+    "rating": 4.5,
+    "level": "Beginner",
+    "description": "Learn modern digital marketing strategies including SEO, social media marketing, email campaigns, and analytics.",
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=225&fit=crop",
+    "category": "Marketing"
+  },
+  {
+    "id": 5,
+    "title": "React & Next.js — The Complete Guide",
+    "instructor": "Alex Rivera",
+    "duration": "28 hours",
+    "rating": 4.8,
+    "level": "Intermediate",
+    "description": "Build production-ready web apps with React 18, Next.js 14, TypeScript, and Tailwind CSS.",
+    "image": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=400&h=225&fit=crop",
+    "category": "Development"
+  },
+  {
+    "id": 6,
+    "title": "Cybersecurity Fundamentals",
+    "instructor": "James Patel",
+    "duration": "18 hours",
+    "rating": 4.6,
+    "level": "Beginner",
+    "description": "Understand the core concepts of cybersecurity, ethical hacking, network security, and risk management.",
+    "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=400&h=225&fit=crop",
+    "category": "Security"
+  },
+  {
+    "id": 7,
+    "title": "AWS Cloud Practitioner to Solutions Architect",
+    "instructor": "Nina Kowalski",
+    "duration": "24 hours",
+    "rating": 4.7,
+    "level": "Advanced",
+    "description": "Go from zero to AWS certified — covering EC2, S3, Lambda, RDS, VPC, and cloud architecture best practices.",
+    "image": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=400&h=225&fit=crop",
+    "category": "Cloud"
+  },
+  {
+    "id": 8,
+    "title": "Graphic Design with Adobe Illustrator",
+    "instructor": "Lena Müller",
+    "duration": "10 hours",
+    "rating": 4.4,
+    "level": "Beginner",
+    "description": "Create stunning logos, icons, and brand identities from scratch using Adobe Illustrator's powerful vector tools.",
+    "image": "https://images.unsplash.com/photo-1572044162444-ad60f128bdea?w=400&h=225&fit=crop",
+    "category": "Design"
+  }
+]
