@@ -10,15 +10,15 @@ import BannerImg from "@/asstes/img2.webp";
 
 const slides = [
   {
-    title: "Upgrade Your Skills 🚀",
+    title: "Upgrade Your Skills",
     desc: "Learn from industry experts and grow faster.",
   },
   {
-    title: "Master In-Demand Skills 🎯",
+    title: "Master In-Demand Skills",
     desc: "Build real-world projects and get hired.",
   },
   {
-    title: "Start Learning Today 📚",
+    title: "Start Learning Today",
     desc: "Join thousands of students online.",
   },
 ];

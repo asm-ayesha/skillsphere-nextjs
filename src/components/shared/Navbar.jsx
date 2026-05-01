@@ -3,9 +3,20 @@
 import { useState } from "react";
 import Link from "next/link";
 import NavLink from "./NavLink";
+import { authClient } from "@/lib/auth-client";
+import { Avatar, Button } from "@heroui/react";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const userData = authClient.useSession()
+  const user = userData.data?.user
+
+
+
+
+  const handleSignOut = async () => {
+    await authClient.signOut()
+  }
 
   return (
     <div className="border-b border-b-teal-100 py-3 mb-10">
@@ -28,8 +39,19 @@ const Navbar = () => {
 
           {/* Auth (desktop) */}
           <div className="hidden md:flex gap-4 text-sm">
-            <Link className="font-bold text-sky-800 border border-sky-200 rounded-xl px-3 py-1 hover:bg-sky-800 hover:text-white" href="/signup">SignUp</Link>
-            <Link className="font-bold text-sky-800 border border-sky-200 rounded-xl px-3 py-1 hover:bg-sky-800 hover:text-white" href="/signin">SignIn</Link>
+            {!user && <ul>
+              <Link className="font-bold text-sky-800 border border-sky-200 rounded-xl px-3 py-1 hover:bg-sky-800 hover:text-white" href="/signup">SignUp</Link>
+              <Link className="font-bold text-sky-800 border border-sky-200 rounded-xl px-3 py-1 hover:bg-sky-800 hover:text-white" href="/signin">SignIn</Link>
+            </ul>}
+            {user &&
+              <div className="flex gap-3">
+                <Avatar size="sm" >
+                  <Avatar.Image alt="John Doe" src={user?.image} referrerPolicy="no-referrer" />
+                  <Avatar.Fallback>{user?.name.charAt(0)}</Avatar.Fallback>
+                </Avatar>
+                <Link onClick={handleSignOut} size="sm" className="font-bold text-sky-800 border border-sky-200 rounded-xl px-3 py-1 hover:bg-sky-800 hover:text-white" href="/signin">Sign Out</Link>
+              </div>
+            }
           </div>
 
           {/* Mobile Button */}
@@ -52,12 +74,12 @@ const Navbar = () => {
 
             <hr className="my-2" />
 
-            <Link className="font-bold text-sky-800 border border-sky-200 rounded-xl px-3 py-1 hover:bg-sky-800 hover:text-white"href="/signup" onClick={() => setOpen(false)}>
-             SignUp
+            <Link className="font-bold text-sky-800 border border-sky-200 rounded-xl px-3 py-1 hover:bg-sky-800 hover:text-white" href="/signup" onClick={() => setOpen(false)}>
+              Sign Up
             </Link>
 
             <Link className="font-bold text-sky-800 border border-sky-200 rounded-xl px-3 py-1 hover:bg-sky-800 hover:text-white" href="/signin" onClick={() => setOpen(false)}>
-             SignIn
+              Sign In
             </Link>
 
           </div>
