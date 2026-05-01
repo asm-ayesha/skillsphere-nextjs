@@ -28,8 +28,8 @@ const Navbar = () => {
 
           {/* Auth (desktop) */}
           <div className="hidden md:flex gap-4 text-sm">
-            <Link href="/signup">LogOut</Link>
-            <Link href="/signin">LogIn</Link>
+            <Link className="font-bold text-sky-800 border border-sky-200 rounded-xl px-3 py-1 hover:bg-sky-800 hover:text-white" href="/signup">SignUp</Link>
+            <Link className="font-bold text-sky-800 border border-sky-200 rounded-xl px-3 py-1 hover:bg-sky-800 hover:text-white" href="/signin">SignIn</Link>
           </div>
 
           {/* Mobile Button */}
@@ -52,12 +52,12 @@ const Navbar = () => {
 
             <hr className="my-2" />
 
-            <Link href="/signup" onClick={() => setOpen(false)}>
-              LogOut
+            <Link className="font-bold text-sky-800 border border-sky-200 rounded-xl px-3 py-1 hover:bg-sky-800 hover:text-white"href="/signup" onClick={() => setOpen(false)}>
+             SignUp
             </Link>
 
-            <Link href="/signin" onClick={() => setOpen(false)}>
-              LogIn
+            <Link className="font-bold text-sky-800 border border-sky-200 rounded-xl px-3 py-1 hover:bg-sky-800 hover:text-white" href="/signin" onClick={() => setOpen(false)}>
+             SignIn
             </Link>
 
           </div>

@@ -7,7 +7,7 @@ const AllCoursesPage = async () => {
     const courses = await res.json()
     
     return (
-        <div>
+        <div className='container mx-auto'>
             <h1 className='text-2xl font-bold m-4 text-sky-900' >All Courses</h1>
            
            

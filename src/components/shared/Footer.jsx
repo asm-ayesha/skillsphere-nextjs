@@ -36,7 +36,7 @@ const Footer = () => {
 
       </div>
 
-      <p className="text-center text-gray-400 mt-8 text-sm">
+      <p className="text-center text-gray-400 mt-15 text-sm border-t border-sky-900 pt-6">
         © 2026 SkillSphere. All rights reserved.
       </p>
       </div>
