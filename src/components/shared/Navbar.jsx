@@ -34,14 +34,14 @@ const Navbar = () => {
           <ul className="hidden md:flex items-center gap-5 text-sm text-sky-600">
             <li><NavLink href="/">Home</NavLink></li>
             <li><NavLink href="/all-courses">Courses</NavLink></li>
-            <li><NavLink href="/pricing">My Profile</NavLink></li>
+            <li><NavLink href="/profile">My Profile</NavLink></li>
           </ul>
 
           {/* Auth (desktop) */}
           <div className="hidden md:flex gap-4 text-sm">
             {!user && <ul>
               <Link className="font-bold text-sky-800 border border-sky-200 rounded-xl px-3 py-1 hover:bg-sky-800 hover:text-white" href="/signup">SignUp</Link>
-              <Link className="font-bold text-sky-800 border border-sky-200 rounded-xl px-3 py-1 hover:bg-sky-800 hover:text-white" href="/signin">SignIn</Link>
+              <Link className="ml-2 font-bold text-sky-800 border border-sky-200 rounded-xl px-3 py-1 hover:bg-sky-800 hover:text-white" href="/signin">SignIn</Link>
             </ul>}
             {user &&
               <div className="flex gap-3">
@@ -70,7 +70,7 @@ const Navbar = () => {
 
             <NavLink href="/" onClick={() => setOpen(false)}>Home</NavLink>
             <NavLink href="/all-courses" onClick={() => setOpen(false)}>Courses</NavLink>
-            <NavLink href="/pricing" onClick={() => setOpen(false)}>My Profile</NavLink>
+            <NavLink href="/profile" onClick={() => setOpen(false)}>My Profile</NavLink>
 
             <hr className="my-2" />
 
