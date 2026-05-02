@@ -1,4 +1,3 @@
-import { convertToDB } from "better-auth/db";
 import Image from "next/image";
 import { FaBookOpen, FaCheckCircle, FaSignal, FaStar } from "react-icons/fa";
 import { MdOutlineAccessTime } from "react-icons/md";
@@ -68,6 +67,8 @@ const CourseDtailsPage = async ({ params }) => {
             ],
         },
     ];
+
+    if (!course) return <div>Not Found</div>
 
     return (
         <div className="container mx-auto px-2">

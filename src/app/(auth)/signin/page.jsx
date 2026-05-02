@@ -13,15 +13,18 @@ import {
   TextField,
 } from "@heroui/react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import { useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { GrGoogle } from "react-icons/gr";
 
 export default function SignIn() {
-const router = useRouter();
+  const router = useRouter();
   const [errorMsg, setErrorMsg] = useState("");
   const [isShowPassword, setIsShowPassword] = useState(false)
+
+  const searchParams = useSearchParams();
+  const callbackUrl = searchParams.get("callbackUrl") || "/";
 
   const onSubmit = async (e) => {
     e.preventDefault();
@@ -33,15 +36,12 @@ const router = useRouter();
     const { data, error } = await authClient.signIn.email({
       email,
       password,
-      callbackURL: '/'
+      callbackURL: callbackUrl
     })
 
-    
-     if (error) {
+
+    if (error) {
       setErrorMsg(error.message || "Login failed");
-    } else {
-     
-      router.push("/");
     }
   }
 
@@ -49,7 +49,7 @@ const router = useRouter();
     try {
       await authClient.signIn.social({
         provider: "google",
-        callbackURL: "/", 
+        callbackURL: callbackUrl,
       });
     } catch (err) {
       setErrorMsg("Google login failed");
@@ -81,14 +81,14 @@ const router = useRouter();
           isRequired
           minLength={8}
           name="password"
-          type={isShowPassword? "text" : "password"}
+          type={isShowPassword ? "text" : "password"}
           className={"relative"}
 
         >
           <Label>Password</Label>
-          <Input 
-          placeholder="Enter your password" />
-          <span className="absolute right-3 top-8" onClick={()=> setIsShowPassword(!isShowPassword)} >
+          <Input
+            placeholder="Enter your password" />
+          <span className="absolute right-3 top-8" onClick={() => setIsShowPassword(!isShowPassword)} >
             {
               isShowPassword ? <FaEye></FaEye> : <FaEyeSlash></FaEyeSlash>
             }

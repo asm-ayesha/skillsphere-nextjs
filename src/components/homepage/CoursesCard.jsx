@@ -2,37 +2,37 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
-const CoursesCard = ({course}) => {
+const CoursesCard = ({ course }) => {
     return (
         <div className="card border border-sky-100  shadow-md mt-8">
-            
-                            <figure>
-                                <Image 
-                                src={course.image}
-                                alt={course.title}
-                                width={500}
-                                height={300}
-                                layout="responsive"
-                                ></Image>
-                            </figure>
-                            <div className="card-body space-y-2">
-                                <h2 className="card-title text-sky-900">
-                                    {course.title}
-                                    
-                                </h2>
-                                <p className="font-bold text-gray-800">Instractor: {course.instructor}</p>
-                                <div className="card-actions justify-between items-center">
-                                    <p className="font-bold text-gray-400 ">Ratings: <span className="text-sky-500">{course.rating}</span>
 
-                                    </p>
-                                    <Link href={`/all-courses/${course.id}`} >
-                                    <button className="px-5 py-3 bg-sky-600 text-white rounded-xl hover:bg-sky-700 transition cursor-pointer">
-                                        View Details
-                                    </button>
-                                    </Link>
-                                </div>
-                            </div>
-                        
+            <figure>
+                <Image
+                    src={course.image}
+                    alt={course.title}
+                    width={500}
+                    height={300}
+                    layout="responsive"
+                ></Image>
+            </figure>
+            <div className="card-body space-y-2">
+                <h2 className="card-title text-sky-900">
+                    {course.title}
+
+                </h2>
+                <p className="font-bold text-gray-800">Instractor: {course.instructor}</p>
+                <div className="card-actions justify-between items-center">
+                    <p className="font-bold text-gray-400 ">Ratings: <span className="text-sky-500">{course.rating}</span>
+
+                    </p>
+                    <Link href={`/all-courses/${course.id}`} >
+                        <button className="px-5 py-3 bg-sky-600 text-white rounded-xl hover:bg-sky-700 transition cursor-pointer">
+                            View Details
+                        </button>
+                    </Link>
+                </div>
+            </div>
+
         </div>
     );
 };
