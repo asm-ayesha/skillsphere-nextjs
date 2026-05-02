@@ -1,12 +1,15 @@
 'use client'
-import { UpdateUser } from '@/components/UpdateUser';
+
 import { authClient } from '@/lib/auth-client';
-import { Avatar, Card } from '@heroui/react';
+import { Avatar, Card, Button } from '@heroui/react';
+import { useRouter } from 'next/navigation';
 import React from 'react';
+import { BiEdit } from 'react-icons/bi';
 
 const ProfilePage = () => {
     const userData = authClient.useSession()
     const user = userData.data?.user
+    const router = useRouter();
     console.log(user)
     return (
         <div>
@@ -19,7 +22,9 @@ const ProfilePage = () => {
                 <h2 className='text-xl font-bold text-sky-900' >{user?.name}</h2>
                 <p className='text-muted'>{user?.email}</p>
 
-                <UpdateUser></UpdateUser>
+                <Button variant="secondary"
+                    onPress={() => router.push("/update-profile")}
+                > <BiEdit></BiEdit> Update Profile</Button>
             </Card>
         </div>
     );
