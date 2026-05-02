@@ -22,7 +22,7 @@ const SearchCourses = ({ courses, setFilteredCourses }) => {
     return (
         <div className="flex items-center gap-2">
 
-            <SearchField className="border border-sky-200 rounded-md" aria-label="Search courses">
+            <SearchField className="border-sky-200 rounded-md" aria-label="Search courses">
                 <SearchField.Group>
                     <SearchField.SearchIcon />
 
@@ -39,7 +39,7 @@ const SearchCourses = ({ courses, setFilteredCourses }) => {
             </SearchField>
 
             <Button
-                className="bg-sky-700 hover:bg-sky-900 rounded-md text-white"
+                className="bg-sky-700 hover:bg-sky-900 rounded-xl text-white"
                 onClick={handleSearch}
             >
                 Search
