@@ -17,6 +17,7 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { GrGoogle } from "react-icons/gr";
+import { toast } from "react-toastify";
 
 export default function SignIn() {
   const router = useRouter();
@@ -35,10 +36,15 @@ export default function SignIn() {
 
     const { data, error } = await authClient.signIn.email({
       email,
-      password,
-      callbackURL: callbackUrl
+      password
     })
+    if (!error) {
+      toast.success("SignIn successful");
 
+      setTimeout(() => {
+        router.push(callbackUrl);
+      }, 800);
+    }
 
     if (error) {
       setErrorMsg(error.message || "Login failed");
@@ -47,6 +53,7 @@ export default function SignIn() {
 
   const handleGoogleSignIn = async () => {
     try {
+      sessionStorage.setItem("loginSuccess", "google");
       await authClient.signIn.social({
         provider: "google",
         callbackURL: callbackUrl,
