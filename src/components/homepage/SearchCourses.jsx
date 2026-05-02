@@ -1,7 +1,7 @@
 "use client";
 
 import { Button, SearchField } from "@heroui/react";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 const SearchCourses = ({ courses, setFilteredCourses }) => {
     const [search, setSearch] = useState("");
