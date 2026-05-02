@@ -50,13 +50,6 @@ const SearchCourses = ({ courses, setFilteredCourses }) => {
                     />
                 </SearchField.Group>
             </SearchField>
-
-            {/* <Button
-                className="h-full rounded-r-full rounded-l-none bg-sky-700 hover:bg-sky-800 text-white text-sm font-medium px-5 shadow-none border-none"
-                onClick={handleSearch}
-            >
-                Search
-            </Button> */}
         </div>
     );
 };
