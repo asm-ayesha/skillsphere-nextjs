@@ -6,7 +6,7 @@ import { Autoplay } from "swiper/modules";
 
 import "swiper/css";
 
-import BannerImg from "@/asstes/img2.webp";
+import BannerImg from "@/asstes/img.svg";
 
 const slides = [
   {
@@ -32,7 +32,7 @@ const Banner = () => {
         fill
         className="object-cover "
       />
-      <div className="absolute inset-0 bg-black/50"></div>
+      <div className="absolute inset-0"></div>
 
       {/* Sliding Text */}
       <div className="absolute inset-0 flex items-center justify-center text-center text-white px-4">
