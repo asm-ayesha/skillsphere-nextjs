@@ -1,25 +1,29 @@
 "use client";
 
 import { authClient } from "@/lib/auth-client";
-import {Envelope} from "@gravity-ui/icons";
-import {Button, Input, Label, Modal, Surface, TextField} from "@heroui/react";
+import { Button, Input, Label, Modal, Surface, TextField } from "@heroui/react";
 import { BiEdit, BiUser } from "react-icons/bi";
 
 export function UpdateUser() {
 
-    const onSubmit = async(e) => {
-        e.preventDefault()
-        const name = e.target.name.value
-        const image = e.target.image.value
+  const onSubmit = async (e) => {
+    e.preventDefault();
 
-        await authClient.updateUser({
-            name,
-            image
-        })
+    const formData = new FormData(e.currentTarget);
 
-        console.log({name,image})
-    }
+    const name = formData.get("name")?.toString().trim();
+    const image = formData.get("image")?.toString().trim();
 
+    const payload = {};
+
+    if (name) payload.name = name;
+    if (image) payload.image = image;
+
+
+    if (Object.keys(payload).length === 0) return;
+
+    await authClient.updateUser(payload);
+  };
   return (
     <Modal>
       <Button variant="secondary"> <BiEdit></BiEdit> Update Profile</Button>
@@ -46,16 +50,16 @@ export function UpdateUser() {
                   </TextField>
 
                   <Modal.Footer>
-              <Button slot="close" variant="secondary">
-                Cancel
-              </Button>
-              <Button type="submit" slot="close">Update</Button>
-            </Modal.Footer>
-                 
+                    <Button slot="close" variant="secondary">
+                      Cancel
+                    </Button>
+                    <Button type="submit" slot="close">Update</Button>
+                  </Modal.Footer>
+
                 </form>
               </Surface>
             </Modal.Body>
-            
+
           </Modal.Dialog>
         </Modal.Container>
       </Modal.Backdrop>
