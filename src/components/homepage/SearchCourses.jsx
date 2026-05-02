@@ -20,30 +20,43 @@ const SearchCourses = ({ courses, setFilteredCourses }) => {
     };
 
     return (
-        <div className="flex items-center gap-2">
+        <div className="flex items-center h-10">
 
-            <SearchField className="border border-sky-200 rounded-md" aria-label="Search courses">
+            <SearchField
+                aria-label="Search courses"
+                className="h-full"
+                classNames={{
+                    base: "h-full",
+                    mainWrapper: "h-full",
+                    inputWrapper: "h-full rounded-l-full rounded-r-none border border-sky-200 border-r-0 bg-white shadow-none px-3",
+                    input: "text-sm text-sky-900 placeholder:text-gray-400",
+                }}
+            >
                 <SearchField.Group>
-                    <SearchField.SearchIcon />
-
+                    <SearchField.SearchIcon className="text-sky-400 w-4 h-4" />
                     <SearchField.Input
-                        className="w-40 px-2 py-2 outline-none border-none focus:ring-0 bg-transparent"
+                        className="w-40 border-none outline-none focus:ring-0 bg-transparent"
                         placeholder="Search..."
                         value={search}
                         onChange={(e) => setSearch(e.target.value)}
                         onKeyDown={handleKeyDown}
                     />
-
-                    <SearchField.ClearButton onClick={() => setSearch("")} />
+                    <SearchField.ClearButton
+                        className="text-gray-400"
+                        onClick={() => {
+                            setSearch("");
+                            setFilteredCourses(courses);
+                        }}
+                    />
                 </SearchField.Group>
             </SearchField>
 
-            <Button
-                className="bg-sky-700 hover:bg-sky-900 rounded-md text-white"
+            {/* <Button
+                className="h-full rounded-r-full rounded-l-none bg-sky-700 hover:bg-sky-800 text-white text-sm font-medium px-5 shadow-none border-none"
                 onClick={handleSearch}
             >
                 Search
-            </Button>
+            </Button> */}
         </div>
     );
 };
