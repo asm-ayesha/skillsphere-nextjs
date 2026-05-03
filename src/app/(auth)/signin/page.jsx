@@ -25,7 +25,9 @@ export default function SignIn() {
   const [isShowPassword, setIsShowPassword] = useState(false)
 
   const searchParams = useSearchParams();
-  const callbackUrl = searchParams.get("callbackUrl") || "/";
+  const callbackUrl =   searchParams.get("callbackUrl") ||
+  searchParams.get("callbackURL") ||
+  "/";
 
   const onSubmit = async (e) => {
     e.preventDefault();
@@ -36,13 +38,11 @@ export default function SignIn() {
 
     const { data, error } = await authClient.signIn.email({
       email,
-      password
+      password,
+      callbackURL: callbackUrl,
     })
     if (!error) {
       toast.success("SignIn successful");
-
-        router.refresh();
-        router.push(callbackUrl);
     }
 
     if (error) {
