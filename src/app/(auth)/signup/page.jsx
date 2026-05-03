@@ -42,8 +42,6 @@ export default function SignUpPage() {
       image
     })
 
-    console.log({ data, error })
-
     if (error) {
       let message = "Registration failed";
 
