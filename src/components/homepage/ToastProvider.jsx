@@ -8,14 +8,21 @@ export default function ToastProvider() {
     useEffect(() => {
         const loginType = sessionStorage.getItem("loginSuccess");
 
-        if (loginType === "google") {
-            toast.success("Google SignIn Successful");
+        const logout = sessionStorage.getItem("logoutSuccess");
+
+        if (loginType) {
+            const message =
+                loginType === "google"
+                    ? "Google SignIn Successful"
+                    : "Welcome back!";
+
+            toast.success(message);
             sessionStorage.removeItem("loginSuccess");
         }
 
-        if (loginType === "email") {
-            toast.success("Welcome back! ");
-            sessionStorage.removeItem("loginSuccess");
+        if (logout) {
+            toast.success("Signed out successfully");
+            sessionStorage.removeItem("logoutSuccess");
         }
     }, []);
 

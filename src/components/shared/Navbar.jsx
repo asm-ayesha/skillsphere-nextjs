@@ -15,6 +15,7 @@ const Navbar = () => {
 
 
   const handleSignOut = async () => {
+    sessionStorage.setItem("logoutSuccess", "true");
     await authClient.signOut()
     window.location.href = "/signin";
   }
