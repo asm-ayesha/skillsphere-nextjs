@@ -21,7 +21,7 @@ export default function ToastProvider() {
         }
 
         if (logout) {
-            toast.success("Signed out successfully");
+            toast.success("Signed out Successfully");
             sessionStorage.removeItem("logoutSuccess");
         }
     }, []);
