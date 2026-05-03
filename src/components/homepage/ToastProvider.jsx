@@ -9,7 +9,12 @@ export default function ToastProvider() {
         const loginType = sessionStorage.getItem("loginSuccess");
 
         if (loginType === "google") {
-            toast.success("Google SignIn successful");
+            toast.success("Google SignIn Successful");
+            sessionStorage.removeItem("loginSuccess");
+        }
+
+        if (loginType === "email") {
+            toast.success("Welcome back! ");
             sessionStorage.removeItem("loginSuccess");
         }
     }, []);

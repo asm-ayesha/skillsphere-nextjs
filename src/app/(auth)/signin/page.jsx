@@ -42,7 +42,7 @@ export default function SignIn() {
       callbackURL: callbackUrl,
     })
     if (!error) {
-      toast.success("SignIn successful");
+      sessionStorage.setItem("loginSuccess", "email");
     }
 
     if (error) {
