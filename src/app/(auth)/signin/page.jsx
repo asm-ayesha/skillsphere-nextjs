@@ -41,9 +41,8 @@ export default function SignIn() {
     if (!error) {
       toast.success("SignIn successful");
 
-      setTimeout(() => {
+        router.refresh();
         router.push(callbackUrl);
-      }, 800);
     }
 
     if (error) {
