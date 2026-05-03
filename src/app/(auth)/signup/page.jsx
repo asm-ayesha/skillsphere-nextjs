@@ -58,12 +58,12 @@ export default function SignUpPage() {
 
     else {
 
-      toast.success("Signup successful ");
+      toast.success("Signup successful");
       await authClient.signOut();
 
       setTimeout(() => {
         router.push("/signin");
-      }, 1500); // 1.
+      }, 1000);
     }
   }
 

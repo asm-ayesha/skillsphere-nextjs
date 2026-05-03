@@ -10,7 +10,7 @@ const ProfilePage = () => {
     const userData = authClient.useSession()
     const user = userData.data?.user
     const router = useRouter();
-    console.log(user)
+
     return (
         <div>
             <Card className='max-w-96 mx-auto flex flex-col items-center mt-5 border border-sky-200 shadow-md'>

@@ -16,6 +16,7 @@ const Navbar = () => {
 
   const handleSignOut = async () => {
     await authClient.signOut()
+    window.location.href = "/signin";
   }
 
   return (
