@@ -6,7 +6,7 @@ import { MdOutlineAccessTime } from "react-icons/md";
 const CourseDtailsPage = async ({ params }) => {
     const { id } = await params;
 
-    const res = await fetch('https://skillsphere-nextjs.vercel.app/data.json')
+    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/data.json`)
     const courses = await res.json()
 
     const course = courses.find(c => c.id == id)

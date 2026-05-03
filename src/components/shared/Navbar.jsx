@@ -27,9 +27,9 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
 
           {/* Logo */}
-          <h3 className="font-bold text-2xl text-sky-800">
+          <Link href="/" className="font-bold text-2xl text-sky-800">
             SkillSphere
-          </h3>
+          </Link>
 
           {/* Desktop Menu */}
           <ul className="hidden md:flex items-center gap-5 text-sm text-sky-600">

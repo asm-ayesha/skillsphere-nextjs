@@ -19,13 +19,13 @@ const AllCoursesClient = ({ courses }) => {
 
       <div className="grid md:grid-cols-3 gap-6">
         {filteredCourses.length > 0 ? (
-        filteredCourses.map((course) => (
-          <CoursesCard key={course.id} course={course} />
-        ))
-      ) :   <p className="text-center col-span-3 text-gray-500 text-lg mt-10">
-            No results found.
-          </p>
-      }
+          filteredCourses.map((course) => (
+            <CoursesCard key={course.id} course={course} />
+          ))
+        ) : <p className="text-center col-span-3 text-gray-500 text-lg mt-10">
+          No results found.
+        </p>
+        }
       </div>
     </div>
   );
